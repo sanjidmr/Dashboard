@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "@/src/components/Sidebar";
-import Navbar from "@/src/components/Navbar";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/navbar";
 
 export default function Layout() {
   return (
@@ -9,7 +9,7 @@ export default function Layout() {
       <main className="transition-all duration-300 pl-20 md:pl-[260px]">
         <Navbar />
         <div className="p-6 md:p-8">
-          <Outlet />
+          <Outlet/>
         </div>
       </main>
     </div>
